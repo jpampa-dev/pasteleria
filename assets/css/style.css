@@ -1,0 +1,162 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --orange: #fc8a45;
+    --orange-light: #fda871;
+    --brown: #6e3119;
+    --gray: rgba(189, 189, 189, 0.897);
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-orange{
+    color: var(--orange);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-orange-light{
+    background-color: var(--orange-light);
+}
+
+.bg-brown{
+    background-color: var(--brown);
+}
+
+.text-white{
+    color: white;
+}
+
+.w-full{
+   width: 100%; 
+}
+
+.menu, 
+.menu-container,
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.menu-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.menu__list{
+    margin-left: 30px;
+    padding-top: 10px;
+    max-width: 500px;
+}
+
+.menu__link{
+    font-weight: 500;
+    color: white;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.menu__logo{
+    width: 140px;
+}
+
+.font-medium{
+    font-weight: 500;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.relative{
+    position: relative;
+}
+
+.bg-overflow::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    /* z-index: 1; */
+    background-color: black;
+    opacity: .4;
+}
+
+.banner-inicio{
+    background-position: left center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title-big{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.text{
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.productos{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.productos__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.productos__card-image{
+   max-width: 300px;
+}
+
+.productos__card{
+    text-align: center;
+}
+
+.footer__content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
